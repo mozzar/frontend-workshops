@@ -1,0 +1,23 @@
+{
+  "name": "akai-frontend-workshops",
+  "version": "1.0.0",
+  "description": "",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akai-org/frontend-workshops.git"
+  },
+  "author": "AKAI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akai-org/frontend-workshops/issues"
+  },
+  "homepage": "https://github.com/akai-org/frontend-workshops#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
