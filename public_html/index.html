@@ -14,9 +14,9 @@
   </h1>
   <nav class="navigation-main">
     <a href="#" class="active">Home</a>
-    <a href="#">About</a>
-    <a href="#">Portfolio</a>
-    <a href="#">Contact</a>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
   </nav>
 
   <div class="welcome">Welcome</div>
@@ -25,10 +25,10 @@
     porttitor, purus sapien efficitur velit, quis sodales ipsum metus ac dui. Quisque gravida bibendum ligula, at
     posuere enim
   </div>
-  <div class="button">See my work</div>
+  <a class="button" href="#portfolio">See my work</a>
 </header>
 
-<section class="about">
+<section id="about">
   <h2 class="section--title">About</h2>
   <p class="about--paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit condimentum placerat. Sed malesuada convallis odio, et semper neque rutrum eu. Aenean pretium, nibh nec porttitor convallis, augue nibh volutpat urna, in consequat ligula dui quis purus. Donec dapibus elit sit amet placerat aliquet. Nunc non ultrices nibh, sed sollicitudin purus. Ut ac est quis dolor volutpat fermentum. Integer a venenatis velit, eu commodo sem. Mauris mattis sem orci. Vivamus ac felis a libero dapibus blandit nec ac turpis.</p>
   <img class="photo-profile" src="http://lorempixel.com/400/400/" alt="Profile Photo">
@@ -43,13 +43,13 @@
   </div>
 </section>
 
-<section class="portfolio">
+<section id="portfolio">
   <h2 class="section--title">Portfolio</h2>
   <div class="slider">
     <div class="col-2">
       <h3 class="project-title">Project Title</h3>
       <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit condimentum placerat.</p>
-      <a href="#" class="readmore">Read more...</a>
+      <a href="#" class="readmore">Read more&hellip;</a>
     </div>
     <div class="col-2">
       <img class="image-project" src="http://lorempixel.com/400/400/" alt="Project image">
@@ -68,7 +68,7 @@
   </div>
 </section>
 
-<section class="contact">
+<section id="contact">
   <h2 class="section--title">Contact</h2>
   <p class="about--paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit condimentum placerat. Sed malesuada convallis odio, et semper neque rutrum eu. Aenean pretium, nibh nec porttitor convallis, augue nibh volutpat urna, in consequat ligula dui quis purus. Donec dapibus elit sit amet placerat aliquet. Nunc non ultrices nibh, sed sollicitudin purus. Ut ac est quis dolor volutpat fermentum. Integer a venenatis velit, eu commodo sem. Mauris mattis sem orci. Vivamus ac felis a libero dapibus blandit nec ac turpis.</p>
   <address>
@@ -84,14 +84,14 @@
   </form>
 </section>
 
-<footer class="footer-main">
+<footer id="footer">
   <div class="social-footer">
     <a href="#" class="facebook"></a>
     <a href="#" class="twitter"></a>
     <a href="#" class="linkedin"></a>
     <a href="#" class="github"></a>
   </div>
-  <div class="copyright">&copy; <strong>John Doe</strong>. All right reserved</div>
+  <div class="copyright">&copy; <strong>John Doe</strong>. All rights reserved.</div>
 </footer>
 
 <script src="scripts/main.js"></script>
