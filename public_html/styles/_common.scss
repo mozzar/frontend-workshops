@@ -1,6 +1,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 2em;
   color: $text-color;
   margin: 0;
@@ -35,4 +35,31 @@ a {
   &:nth-child(odd) {
     background: $odd-background-color;
   }
+}
+
+.button {
+  color: $white;
+  background-color: $primary-color;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  border: none;
+}
+
+.button-large {
+  font-size: 14px;
+  line-height: 42px;
+  height: 42px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.button-small {
+  font-size: 12px;
+  border-radius: 6px;
+  line-height: 32px;
+  height: 32px;
+  width: 160px;
 }
