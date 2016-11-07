@@ -148,6 +148,22 @@ a {
   #welcome .description {
     margin-bottom: 36px; }
 
+[id="portfolio"] .image-project {
+  max-width: 100%; }
+
+[id="portfolio"] .slider > div > div {
+  padding: 0 10px 0 0;
+  box-sizing: border-box; }
+
+[id="portfolio"] .placeholder {
+  box-sizing: border-box;
+  padding: 10px; }
+  [id="portfolio"] .placeholder:after {
+    background-color: silver;
+    height: 100px;
+    display: block;
+    content: " "; }
+
 #footer {
   background: #f4f4f4;
   padding: 45px 0 80px;

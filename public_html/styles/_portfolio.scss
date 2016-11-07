@@ -1,0 +1,21 @@
+[id="portfolio"] {
+  .image-project {
+    max-width: 100%;
+  }
+
+  .slider > div > div {
+    padding: 0 10px 0 0;
+    box-sizing: border-box;
+  }
+
+  .placeholder {
+    box-sizing: border-box;
+    padding: 10px;
+    &:after {
+      background-color: silver;
+      height: 100px;
+      display: block;
+      content: " ";
+    }
+  }
+}
