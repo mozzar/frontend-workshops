@@ -21,6 +21,11 @@ h3 {
   color: #434343;
   font-size: 1.5em; }
 
+p {
+  color: #5b5b5b;
+  font-size: 0.9em;
+  line-height: 1.6em; }
+
 a {
   color: #e0a824;
   text-decoration: none; }
@@ -92,6 +97,29 @@ a {
     font-size: 3.75em; }
   #welcome .description {
     margin-bottom: 36px; }
+
+.photo-profile {
+  border-radius: 50%;
+  width: 150px;
+  box-shadow: 0 8px 1em #5b5b5b;
+  margin: 40px 0 0 40px;
+  vertical-align: top; }
+
+.description {
+  width: 60%;
+  display: inline-block; }
+
+.social-main {
+  width: 610px;
+  text-align: center;
+  font-size: 2em;
+  margin: 20px auto; }
+  .social-main a {
+    padding: 5px;
+    color: #434343;
+    transition: color .3s ease-in; }
+    .social-main a:hover, .social-main a:focus {
+      color: #e0a824; }
 
 #footer {
   background: #f4f4f4;
