@@ -25,6 +25,12 @@ h3 {
   font-size: 1.5em;
 }
 
+p{
+  color: $text-color;
+  font-size: 0.9em;
+  line-height: 1.6em;
+}
+
 a {
   color: $primary-color;
   text-decoration: none;
