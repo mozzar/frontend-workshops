@@ -1,27 +1,30 @@
-.photo-profile {
-  border-radius: 50%;
-  width: 150px;
-  box-shadow: 0 8px 1em $text-color;
-  margin: 40px 0 0 40px;
-  vertical-align: top;
-}
+[id="about"] {
 
-.description {
-  width: 60%;
-  display: inline-block;
-}
+  .description {
+    width: 60%;
+    display: inline-block;
+  }
 
-.social-main {
-  width: $wrapper-width;
-  text-align: center;
-  font-size: 2em;
-  margin: 20px auto;
-  a {
-    padding: 5px;
-    color: $header-color;
-    transition: color .3s ease-in;
-    &:hover, &:focus {
-      color: $primary-color;
+  .photo-profile {
+    border-radius: 50%;
+    width: 150px;
+    box-shadow: 0 8px 1em $text-color;
+    margin: 40px 0 0 40px;
+    vertical-align: top;
+  }
+
+  .social-main {
+    width: $wrapper-width;
+    text-align: center;
+    font-size: 2em;
+    margin: 20px auto;
+    a {
+      padding: 5px;
+      color: $header-color;
+      transition: color .3s ease-in;
+      &:hover, &:focus {
+        color: $primary-color;
+      }
     }
   }
 }
