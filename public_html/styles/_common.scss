@@ -88,68 +88,72 @@ a {
   font-size: 0;
 }
 
+$one-twelfth: 8.33%;
+$gutter: 2%;
+
 .col {
   display: inline-block;
   font-size: 1rem;
   vertical-align: top;
+  margin: $gutter;
 }
 
 .col-1 {
   @extend .col;
-  width: 8.33%;
+  width: $one-twelfth - 2 * $gutter;
 }
 
 .col-2 {
   @extend .col;
-  width: 16.66%;
+  width: 2 * $one-twelfth - 2 * $gutter;
 }
 
 .col-3 {
   @extend .col;
-  width: 25%;
+  width: 3 * $one-twelfth - 2 * $gutter;
 }
 
 .col-4 {
   @extend .col;
-  width: 33.33%;
+  width: 4 * $one-twelfth - 2 * $gutter;
 }
 
 .col-5 {
   @extend .col;
-  width: 41.66%;
+  width: 5 * $one-twelfth - 2 * $gutter;
 }
 
 .col-6 {
   @extend .col;
-  width: 50%;
+  width: 6 * $one-twelfth - 2 * $gutter;
 }
 
 .col-7 {
   @extend .col;
-  width: 58.33%;
+  width: 7 * $one-twelfth - 2 * $gutter;
 }
 
 .col-8 {
   @extend .col;
-  width: 66.66%;
+  width: 8 * $one-twelfth - 2 * $gutter;
 }
 
 .col-9 {
   @extend .col;
-  width: 75%;
+  width: 9 * $one-twelfth - 2 * $gutter;
 }
 
 .col-10 {
   @extend .col;
-  width: 83.33%;
+  width: 10 * $one-twelfth - 2 * $gutter;
 }
 
 .col-11 {
   @extend .col;
-  width: 91.66%;
+  width: 11 * $one-twelfth - 2 * $gutter;
 }
 
 .col-12 {
   @extend .col;
-  width: 100%;
+  width: 12 * $one-twelfth - 2 * $gutter;
 }
