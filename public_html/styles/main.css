@@ -205,6 +205,7 @@ a {
   margin: 30px 0; }
 
 #contact input[type=text], #contact input[type=email], #contact textarea {
+  color: #5b5b5b;
   font-family: inherit;
   font-size: inherit;
   width: 100%;
