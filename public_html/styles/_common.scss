@@ -44,6 +44,7 @@ a {
 }
 
 .button {
+  font-family: inherit; // needed with <input>s
   color: $white;
   background-color: $primary-color;
   font-weight: bold;
@@ -152,4 +153,3 @@ a {
   @extend .col;
   width: 100%;
 }
-

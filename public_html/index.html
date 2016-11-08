@@ -111,21 +111,30 @@
 <section class="page-section" id="contact">
   <div class="wrapper">
     <h2 class="section--title">Contact</h2>
-    <p class="about--paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit condimentum
-      placerat. Sed malesuada convallis odio, et semper neque rutrum eu. Aenean pretium, nibh nec porttitor
-      convallis, augue nibh volutpat urna, in consequat ligula dui quis purus. Donec dapibus elit sit amet
-      placerat aliquet. Nunc non ultrices nibh, sed sollicitudin purus. Ut ac est quis dolor volutpat fermentum.
-      Integer a venenatis velit, eu commodo sem. Mauris mattis sem orci. Vivamus ac felis a libero dapibus blandit
-      nec ac turpis.</p>
-    <address>
-      9322 12th Street, Tucson | <a href="#">Map</a><br>
-      <a href="tel:00302025550157" class="phone-link">(0030) 202 555 0157</a><br>
-      <a href="mailto:example@gmail.com" class="email-link">example@gmail.com</a>
-    </address>
+
+    <div class="row">
+      <div class="col-7">
+        <p class="contact--paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit condimentum
+          placerat. Sed malesuada convallis odio, et semper neque rutrum eu.</p>
+      </div>
+      <div class="col-5">
+        <address>
+            9322 12th Street, Tucson | <a href="#">Map</a><br>
+            <a href="tel:00302025550157" class="phone-link">(0030) 202 555 0157</a><br>
+            <a href="mailto:example@gmail.com" class="email-link">example@gmail.com</a>
+        </address>
+      </div>
+    </div>
     <form action="">
-      <input type="text" placeholder="Your name">
-      <input type="text" placeholder="Your e-mail address">
-      <input type="text" placeholder="Your message...">
+      <div class="row">
+        <div class="col-4">
+          <input type="text" placeholder="Your name">
+        </div>
+        <div class="col-8">
+          <input type="email" placeholder="Your e-mail address">
+        </div>
+      </div>
+      <textarea placeholder="Your message..."></textarea>
       <input type="submit" value="Send Message" class="button button-small">
     </form>
   </div>
