@@ -77,43 +77,44 @@ a {
 .col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
   display: inline-block;
   font-size: 1rem;
-  vertical-align: top; }
+  vertical-align: top;
+  margin: 2%; }
 
 .col-1 {
-  width: 8.33%; }
+  width: 4.33%; }
 
 .col-2 {
-  width: 16.66%; }
+  width: 12.66%; }
 
 .col-3 {
-  width: 25%; }
+  width: 20.99%; }
 
 .col-4 {
-  width: 33.33%; }
+  width: 29.32%; }
 
 .col-5 {
-  width: 41.66%; }
+  width: 37.65%; }
 
 .col-6 {
-  width: 50%; }
+  width: 45.98%; }
 
 .col-7 {
-  width: 58.33%; }
+  width: 54.31%; }
 
 .col-8 {
-  width: 66.66%; }
+  width: 62.64%; }
 
 .col-9 {
-  width: 75%; }
+  width: 70.97%; }
 
 .col-10 {
-  width: 83.33%; }
+  width: 79.3%; }
 
 .col-11 {
-  width: 91.66%; }
+  width: 87.63%; }
 
 .col-12 {
-  width: 100%; }
+  width: 95.96%; }
 
 #welcome {
   height: 100vh;
@@ -185,8 +186,7 @@ a {
   box-sizing: border-box; }
 
 [id="portfolio"] .placeholder {
-  box-sizing: border-box;
-  padding: 10px; }
+  box-sizing: border-box; }
   [id="portfolio"] .placeholder:after {
     background-color: silver;
     height: 100px;
