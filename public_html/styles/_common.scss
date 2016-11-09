@@ -34,6 +34,12 @@ p{
 a {
   color: $primary-color;
   text-decoration: none;
+  transition: .3s;
+
+  &:hover, &:focus {
+    color: darken($primary-color, 10%);
+    text-decoration: underline;
+  }
 }
 
 .page-section {
@@ -53,6 +59,14 @@ a {
   vertical-align: middle;
   display: inline-block;
   border: none;
+  transition: .3s;
+
+  &:hover, &:focus {
+    cursor: pointer;
+    text-decoration: none;
+    color: $white;
+    background-color: darken($primary-color, 5%);
+  }
 }
 
 .button-large {
