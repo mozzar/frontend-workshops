@@ -37,10 +37,11 @@
     a {
       margin-left: 75px;
       color: $white;
-    }
 
-    a.active {
-      color: $primary-color;
+      &:hover, &:focus, &.active {
+        color: $primary-color;
+        text-decoration: none;
+      }
     }
   }
 
