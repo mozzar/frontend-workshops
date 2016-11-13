@@ -18,13 +18,5 @@
     text-align: center;
     font-size: 2em;
     margin: 20px auto;
-    a {
-      padding: 5px;
-      color: $header-color;
-      transition: color .3s ease-in;
-      &:hover, &:focus {
-        color: $primary-color;
-      }
-    }
   }
 }

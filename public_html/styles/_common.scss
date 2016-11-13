@@ -42,6 +42,15 @@ a {
   }
 }
 
+i.fa {
+  padding: 5px;
+  color: $header-color;
+  transition: color .3s ease-in;
+  &:hover, &:focus {
+    color: $primary-color;
+  }
+}
+
 .page-section {
   padding: 100px 0;
   &:nth-child(odd) {
