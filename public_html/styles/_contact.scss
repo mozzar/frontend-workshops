@@ -1,4 +1,4 @@
-#contact {
+[id="contact"] {
   .contact--paragraph {
     max-width: 20em;
   }
@@ -22,6 +22,7 @@
     border-bottom: 3px solid #ebebeb;
     padding: 8px 4px;
     outline: none;
+    transition: .3s;
 
     &:focus {
       border-bottom-color: $primary-color;
