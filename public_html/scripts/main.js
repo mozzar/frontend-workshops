@@ -1,5 +1,5 @@
 function smoothScroll(duration) {
-  $('nav a').on('click', function (event) {
+  $('.navigation-link').on('click', function (event) {
     var target = $($(this).attr('href'));
     event.preventDefault();
     $('html, body').animate({
