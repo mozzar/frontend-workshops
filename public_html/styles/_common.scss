@@ -66,6 +66,7 @@ i.fa {
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
+  padding: 8px 10px;
   display: inline-block;
   border: none;
   transition: .3s;
@@ -80,18 +81,14 @@ i.fa {
 
 .button-large {
   font-size: 0.875em;
-  line-height: 42px;
-  height: 42px;
   width: 200px;
   border-radius: 10px;
 }
 
 .button-small {
   font-size: 0.75em;
-  border-radius: 6px;
-  line-height: 32px;
-  height: 32px;
   width: 160px;
+  border-radius: 6px;
 }
 
 // Grid 12
