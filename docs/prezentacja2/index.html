@@ -281,6 +281,81 @@
       </section>
     </section>
 
+    <section>
+      <h2>display</h2>
+      <section>
+        <style>
+          .box3 {
+            padding: 20px !important;
+            margin: 20px !important;
+            color: white !important;
+          }
+          .block {
+            background: darkblue !important;
+            display: block !important;
+          }
+          .il-block {
+            background: darkgreen !important;
+            display: inline-block !important;
+          }
+          .none {
+            display: none !important;
+          }
+        </style>
+
+        <div class="box3 block">Block</div>
+        <div class="box3 block">Block</div>
+        <div class="box3 block">Block</div>
+
+        <div class="box3 il-block">Inline Block</div>
+        <div class="box3 il-block">Inline Block</div>
+        <div class="box3 il-block">Inline Block</div>
+
+        <div class="box3 none">Display: none</div>
+        <div class="box3 none">Display: none</div>
+        <div class="box3 none">Display: none</div>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+          ```css
+          .box {
+            padding: 20px;
+            margin: 20px;
+            color: white;
+          }
+          .block {
+            background: darkblue;
+            display: block;
+          }
+          .il-block {
+            background: darkgreen;
+            display: inline-block;
+          }
+          .none {
+            display: none;
+          }
+          ```
+        </script>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+          ```html
+          <div class="box block">Block</div>
+          <div class="box block">Block</div>
+          <div class="box block">Block</div>
+
+          <div class="box il-block">Inline Block</div>
+          <div class="box il-block">Inline Block</div>
+          <div class="box il-block">Inline Block</div>
+
+          <div class="box none">Display: none</div>
+          <div class="box none">Display: none</div>
+          <div class="box none">Display: none</div>
+          ```
+        </script>
+      </section>
+    </section>
+
 
   </div>
 </div>
