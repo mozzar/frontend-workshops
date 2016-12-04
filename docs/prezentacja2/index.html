@@ -163,49 +163,6 @@
       </section>
     </section>
 
-
-
-    <section>
-      <h2>Pseudoklasa :focus</h2>
-      <section>
-        <style>
-          .fbutton {
-            color: black !important;
-          }
-
-          .fbutton {
-            display: inline-block !important;
-            padding: 20px !important;
-            background: #ffa62b !important;
-          }
-
-          .fbutton:focus {
-            background: #30afff !important;
-          }
-        </style>
-        <br/>
-        <br/>
-        <a class="fbutton" href="#">Focus me</a>
-        <a class="fbutton" href="#">Focus me</a>
-        <a class="fbutton" href="#">Focus me</a>
-      </section>
-      <section data-markdown>
-        <script type="text/template">
-          ```css
-          .button{ display: inline-block; padding: 20px; background: #ffa62b; }
-          .button:focus{ background: #30afff; }
-          ```
-
-          ```html
-          <a class="button" href="#">Focus me</a>
-          <a class="button" href="#">Focus me</a>
-          <a class="button" href="#">Focus me</a>
-          ```
-        </script>
-      </section>
-    </section>
-
-
     <section>
       <h2>Box Model</h2>
       <section>
@@ -351,6 +308,283 @@
           <div class="box none">Display: none</div>
           <div class="box none">Display: none</div>
           <div class="box none">Display: none</div>
+          ```
+        </script>
+      </section>
+    </section>
+
+    <section>
+      <h2>Flexbox</h2>
+      <section>
+        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A guide to flexbox on CSS Tricks</a>
+      </section>
+    </section>
+
+    <section>
+      <h2>@media</h2>
+      <section>
+        <style>
+          .responsive-color {
+            padding: 50px !important;
+            background: darkolivegreen;
+          }
+
+          @media screen and (max-width: 480px) {
+            .responsive-color {
+              background-color: lightgreen;
+            }
+          }
+
+          @media screen and (min-width: 480px) and (min-width: 780px) {
+            .responsive-color {
+              background-color: olive;
+            }
+          }
+        </style>
+        <div class="responsive-color">Hello</div>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ```css
+          .responsive-color {
+            padding: 50px !important;
+            background: darkolivegreen;
+          }
+
+          @media screen and (max-width: 480px) {
+            .responsive-color {
+              background-color: lightgreen;
+            }
+          }
+
+          @media screen and (min-width: 480px) and (min-width: 780px) {
+            .responsive-color {
+              background-color: olive;
+            }
+          }
+          ```
+        </script>
+      </section>
+    </section>
+
+    <section>
+      <h2>opacity</h2>
+      <section>
+        <style>
+          .transparent {
+            opacity: 0.5;
+          }
+          .transparent:hover {
+            opacity: 0.9;
+          }
+        </style>
+        <img class="transparent" src="http://lorempixel.com/200/200" alt="random image" />
+        <img class="transparent" src="http://lorempixel.com/200/200" alt="random image" />
+        <img class="transparent" src="http://lorempixel.com/200/200" alt="random image" />
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+          ```css
+          .transparent {
+          opacity: 0.5;
+          }
+          ```
+          ```html
+          <img class="transparent" src="http://lorempixel.com/200/200" alt="random image" />
+          <img class="transparent" src="http://lorempixel.com/200/200" alt="random image" />
+          <img class="transparent" src="http://lorempixel.com/200/200" alt="random image" />
+          ```
+        </script>
+      </section>
+    </section>
+
+    <section>
+      <h2>border-radius</h2>
+      <section>
+        <style>
+          .br-img1 {
+            border-radius: 20px;
+          }
+          .br-img2 {
+            border-radius: 50%;
+          }
+          .br-img3 {
+            border-radius: 20%;
+          }
+        </style>
+        <img class="br-img1" src="http://lorempixel.com/200/300" alt="random image" />
+        <img class="br-img2" src="http://lorempixel.com/200/300" alt="random image" />
+        <img class="br-img3" src="http://lorempixel.com/200/300" alt="random image" />
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+          ```css
+          .br-img1 {
+            border-radius: 20px;
+          }
+          .br-img2 {
+            border-radius: 50%;
+          }
+          .br-img3 {
+            border-radius: 20%;
+          }
+          ```
+          ```html
+          <img class="br-img1" src="http://lorempixel.com/200/300" alt="random image" />
+          <img class="br-img2" src="http://lorempixel.com/200/300" alt="random image" />
+          <img class="br-img3" src="http://lorempixel.com/200/300" alt="random image" />
+          ```
+        </script>
+      </section>
+    </section>
+
+    <section>
+      <h2>Position</h2>
+      <section>
+        <img STYLE="width: 100%" src="css-positioning.jpg" />
+        <small>source: https://github.com/euniceschoi/euniceschoi/blob/master/blog/css-concepts.html</small>
+      </section>
+    </section>
+
+    <section>
+      <h2>Transform</h2>
+      <section>
+        <style>
+          .t-img1:hover {
+            transform: translateX(-40px);
+          }
+          .t-img2:hover {
+            transform: rotate(45deg);
+          }
+          .t-img3:hover {
+            transform: scale(1.5);
+          }
+        </style>
+        <img class="t-img1" src="http://lorempixel.com/200/200" alt="random image" />
+        <img class="t-img2" src="http://lorempixel.com/200/200" alt="random image" />
+        <img class="t-img3" src="http://lorempixel.com/200/200" alt="random image" />
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+          ```css
+          .t-img1:hover {
+            transform: translateX(-40px);
+          }
+          .t-img2:hover {
+            transform: rotate(45deg);
+          }
+          .t-img3:hover {
+            transform: scale(1.5);
+          }
+          ```
+          ```html
+          <img class="t-img1" src="http://lorempixel.com/200/200" alt="random image" />
+          <img class="t-img2" src="http://lorempixel.com/200/200" alt="random image" />
+          <img class="t-img3" src="http://lorempixel.com/200/200" alt="random image" />
+          ```
+        </script>
+      </section>
+    </section>
+
+    <section>
+      <h2>Transition</h2>
+      <section>
+        <style>
+          .smooth-transform {
+            transition: transform 1s linear;
+          }
+
+          .t-img1:hover {
+            transform: translateX(-40px);
+          }
+          .t-img2:hover {
+            transform: rotate(45deg);
+          }
+          .t-img3:hover {
+            transform: scale(1.5);
+          }
+        </style>
+        <img class="smooth-transform t-img1" src="http://lorempixel.com/200/200" alt="random image" />
+        <img class="smooth-transform t-img2" src="http://lorempixel.com/200/200" alt="random image" />
+        <img class="smooth-transform t-img3" src="http://lorempixel.com/200/200" alt="random image" />
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+          ```css
+          .smooth-transform {
+            transition: transform 1s linear;
+          }
+
+          .t-img1:hover {
+            transform: translateX(-40px);
+          }
+          .t-img2:hover {
+            transform: rotate(45deg);
+          }
+          .t-img3:hover {
+            transform: scale(1.5);
+          }
+          ```
+          ```html
+          <img class="smooth-transform t-img1" src="http://lorempixel.com/200/200" alt="random image" />
+          <img class="smooth-transform t-img2" src="http://lorempixel.com/200/200" alt="random image" />
+          <img class="smooth-transform t-img3" src="http://lorempixel.com/200/200" alt="random image" />
+          ```
+        </script>
+      </section>
+      <section>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function">Dokumentacja</a><br>
+        <a href="http://cubic-bezier.com/">Cubic bezier generator</a>
+      </section>
+    </section>
+
+
+    <section>
+      <h2>Animacje</h2>
+      <section>
+        <div class="typing_loader"></div>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+          ```css
+          .typing_loader{
+              width: 15px;
+              height: 5px;
+              border-radius: 0%;
+              animation: typing 1.5s linear infinite alternate;
+              margin: 46px auto;
+              position: relative;
+              left: -17px;
+          }
+
+          @keyframes typing{
+            0%{
+              background-color: rgba(0,255,255, 0.6);
+              box-shadow: 17px 0px 0px 0px rgba(0,255,255,0.2),
+                          34px 0px 0px 0px rgba(0,255,255,0.2);
+            }
+            25%{
+              background-color: rgba(0,255,255, 0.2);
+              box-shadow: 17px 0px 0px 0px rgba(0,255,255,0.6),
+                          34px 0px 0px 0px rgba(0,255,255,0.2);
+            }
+            50%{
+              background-color: rgba(0,255,255, 0.2);
+              box-shadow: 17px 0px 0px 0px rgba(0,255,255,0.2),
+                          34px 0px 0px 0px rgba(0,255,255,0.6);
+            }
+            75%{
+              background-color: rgba(0,255,255, 0.2);
+              box-shadow: 17px 0px 0px 0px rgba(0,255,255,0.6),
+                          34px 0px 0px 0px rgba(0,255,255,0.2);
+            }
+            100%{
+              background-color: rgba(0,255,255, 0.6);
+              box-shadow: 17px 0px 0px 0px rgba(0,255,255,0.2),
+                          34px 0px 0px 0px rgba(0,255,255,0.2);
+            }
+          }
           ```
         </script>
       </section>
