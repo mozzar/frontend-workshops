@@ -314,6 +314,101 @@
     </section>
 
     <section>
+      <h2>Float</h2>
+      <section>
+        <style>
+          .fcontainer {
+            background: lightyellow;
+            border: 1px solid red !important;
+          }
+
+          .p {
+            float: left;
+            width: 47%;
+            font-size: 28px !important;
+            border: 1px solid green !important;
+          }
+
+          .p:first-child {
+            margin-right: 5%;
+          }
+
+          .clearfix:before,
+          .clearfix:after {
+            content: " "; /* 1 */
+            display: table; /* 2 */
+          }
+
+          .clearfix:after {
+            clear: both;
+          }
+
+          .clearfix {
+            *zoom: 1;
+          }
+        </style>
+        <h4>ClearFix</h4>
+        <div class="fcontainer clearfix">
+          <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante dolor. Sed mauris justo, tempus in mollis quis, rhoncus non turpis. </p>
+          <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante dolor. Sed </p>
+        </div>
+      </section>
+      <section>
+        <h4>Without ClearFix</h4>
+        <div class="fcontainer">
+          <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante dolor. Sed mauris justo, tempus in mollis quis, rhoncus non turpis. </p>
+          <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante dolor. Sed </p>
+        </div>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+          ```css
+          .fcontainer {
+            background: lightyellow;
+            border: 1px solid red !important;
+          }
+
+          .p {
+            float: left;
+            width: 47%;
+            font-size: 28px !important;
+            border: 1px solid green !important;
+          }
+
+          .p:first-child {
+           margin-right: 5%;
+          }
+
+          .clearfix:before,
+          .clearfix:after {
+            content: " "; /* 1 */
+            display: table; /* 2 */
+          }
+
+          .clearfix:after {
+            clear: both;
+          }
+
+          .clearfix {
+            *zoom: 1;
+          }
+          ```
+        </script>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+          ```html
+          <h4>ClearFix</h4>
+          <div class="fcontainer clearfix">
+            <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante dolor. Sed mauris justo, tempus in mollis quis, rhoncus non turpis. </p>
+            <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante dolor. Sed </p>
+          </div>
+          ```
+        </script>
+      </section>
+    </section>
+
+    <section>
       <h2>Flexbox</h2>
       <section>
         <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A guide to flexbox on CSS Tricks</a>
