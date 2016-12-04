@@ -1,0 +1,310 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>reveal.js</title>
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/sky.css">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+    <section>
+      <h1>AKAI Frontend Workshops #2</h1>
+    </section>
+
+    <section>
+      <h2>&lt;iframe&gt;</h2>
+      <section>
+        <iframe src="http://akai.org.pl/" width="600" height="400">
+          <p>Your browser does not support iframes.</p>
+        </iframe>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+          ```html
+          <iframe src="http://akai.org.pl/" width="600" height="400">
+            <p>Your browser does not support iframes.</p>
+          </iframe>
+          ```
+        </script>
+      </section>
+    </section>
+
+    <section>
+      <h2>&lt;audio&gt;</h2>
+      <section>
+        <audio controls="controls">
+          Your browser does not support the <code>audio</code> element.
+          <source src="jazz.mp3" type="audio/mp3">
+        </audio>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+          ```html
+          <audio controls="controls">
+            Your browser does not support the <code>audio</code> element.
+            <source src="jazz.mp3" type="audio/mp3">
+          </audio>
+          ```
+        </script>
+      </section>
+    </section>
+
+    <section>
+      <h2>&lt;video&gt;</h2>
+      <section>
+        <video src="http://v2v.cc/~j/theora_testsuite/320x240.ogg" controls>
+          Your browser does not support the <code>video</code> element.
+        </video>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+          ```html
+          <video src="http://v2v.cc/~j/theora_testsuite/320x240.ogg" controls>
+            Your browser does not support the <code>video</code> element.
+          </video>
+          ```
+        </script>
+      </section>
+    </section>
+
+    <section><h2>CSS</h2></section>
+
+    <section>
+      <h2>Pseudoklasa :hover</h2>
+      <section>
+        <style>
+          .button {
+            color: black !important;
+          }
+
+          .button {
+            display: inline-block !important;
+            padding: 20px !important;
+            background: #ffa62b !important;
+          }
+
+          .button:hover {
+            background: #30afff !important;
+          }
+        </style>
+        <br/>
+        <br/>
+        <a class="button" href="#">Hover me</a>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+          ```css
+          .button{ display: inline-block; padding: 20px; background: #ffa62b; }
+          .button:hover{ background: #30afff }
+          ```
+
+          ```html
+          <a class="button" href="#">Hover me</a>
+          ```
+        </script>
+      </section>
+    </section>
+
+
+    <section>
+      <h2>Pseudoklasa :focus</h2>
+      <section>
+        <style>
+          .fbutton {
+            color: black !important;
+          }
+
+          .fbutton {
+            display: inline-block !important;
+            padding: 20px !important;
+            background: #ffa62b !important;
+          }
+
+          .fbutton:focus {
+            background: #30afff !important;
+          }
+        </style>
+        <br/>
+        <br/>
+        <a class="fbutton" href="#">Focus me</a>
+        <a class="fbutton" href="#">Focus me</a>
+        <a class="fbutton" href="#">Focus me</a>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+          ```css
+          .button{ display: inline-block; padding: 20px; background: #ffa62b; }
+          .button:focus{ background: #30afff; }
+          ```
+
+          ```html
+          <a class="button" href="#">Focus me</a>
+          <a class="button" href="#">Focus me</a>
+          <a class="button" href="#">Focus me</a>
+          ```
+        </script>
+      </section>
+    </section>
+
+
+
+    <section>
+      <h2>Pseudoklasa :focus</h2>
+      <section>
+        <style>
+          .fbutton {
+            color: black !important;
+          }
+
+          .fbutton {
+            display: inline-block !important;
+            padding: 20px !important;
+            background: #ffa62b !important;
+          }
+
+          .fbutton:focus {
+            background: #30afff !important;
+          }
+        </style>
+        <br/>
+        <br/>
+        <a class="fbutton" href="#">Focus me</a>
+        <a class="fbutton" href="#">Focus me</a>
+        <a class="fbutton" href="#">Focus me</a>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+          ```css
+          .button{ display: inline-block; padding: 20px; background: #ffa62b; }
+          .button:focus{ background: #30afff; }
+          ```
+
+          ```html
+          <a class="button" href="#">Focus me</a>
+          <a class="button" href="#">Focus me</a>
+          <a class="button" href="#">Focus me</a>
+          ```
+        </script>
+      </section>
+    </section>
+
+
+    <section>
+      <h2>Box Model</h2>
+      <section>
+        <style>
+          .kontener {
+            border: 1px solid red !important;
+          }
+
+          .box {
+            display: inline-block !important;
+            width: 300px !important;
+            height: 200px !important;
+            background: lightsalmon;
+            padding: 25px !important;
+            margin:  25px !important;
+            border: 25px solid salmon !important;
+          }
+
+          .box1 {
+            background: lightsalmon;
+            box-sizing: border-box !important;
+          }
+
+          .box2 {
+            background: lightseagreen;
+            border-color: seagreen !important;
+            box-sizing: content-box !important;
+          }
+        </style>
+        <div class="kontener">
+          <div class="box box1">border-box</div>
+
+          <div class="box box2">content-box</div>
+        </div>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+          ```css
+          .kontener {
+            border: 1px solid red;
+          }
+          .box {
+            display: inline-block;
+            width: 300px;
+            height: 200px;
+            padding: 25px;
+            margin:  25px;
+            border: 25px solid salmon;
+          }
+          .box1 {
+            background: lightsalmon;
+            border-color: salomon;
+            box-sizing: border-box;
+          }
+          .box2 {
+            background: lightseagreen;
+            border-color: seagreen;
+            box-sizing: content-box;
+          }
+          ```
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ```html
+          <div class="kontener">
+            <div class="box box1">border-box</div>
+            <div class="box box2">content-box</div>
+          </div>
+          ```
+        </script>
+      </section>
+    </section>
+
+
+  </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+  // More info https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    history: true,
+
+    // More info https://github.com/hakimel/reveal.js#dependencies
+    dependencies: [
+      {src: 'plugin/markdown/marked.js'},
+      {src: 'plugin/markdown/markdown.js'},
+      {src: 'plugin/notes/notes.js', async: true},
+      {
+        src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+        hljs.initHighlightingOnLoad();
+      }
+      }
+    ]
+  });
+</script>
+</body>
+</html>
