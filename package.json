@@ -1,5 +1,5 @@
 {
-  "name": "akai-frontend-workshops",
+  "name": "frontend-workshops",
   "version": "1.0.0",
   "description": "",
   "main": " ",
@@ -17,8 +17,9 @@
   },
   "homepage": "https://github.com/akai-org/frontend-workshops#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^2.3.2",
-    "gulp-webserver": "^0.9.1"
-  }
+    "gulp": "3.9.1",
+    "gulp-sass": "2.3.2",
+    "gulp-webserver": "0.9.1"
+  },
+  "background": "#463837"
 }
