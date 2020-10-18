@@ -13,7 +13,7 @@ Umieściliśmy tam też zadania do samodzielnego wykonania.
 Ściągnij [plik ZIP](https://github.com/akai-org/frontend-workshops/archive/master.zip)
 i otwórz plik `public_html/index.html` w przeglądarce.
 
-### Profesjonalnie (wymaga zainstalowanego gulpa,npma oraz gita)
+### Profesjonalnie - zalecane dla zaawansowanych (wymaga zainstalowanego gulpa,npma oraz gita)
 
 1. Zainstaluj programy [git](https://git-scm.com/downloads) i [Node.js](https://nodejs.org/en/download/).
 2. Uruchom terminal
